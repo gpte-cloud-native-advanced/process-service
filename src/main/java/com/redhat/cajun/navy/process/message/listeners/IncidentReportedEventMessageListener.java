@@ -1,21 +1,15 @@
 package com.redhat.cajun.navy.process.message.listeners;
 
-import java.math.BigDecimal;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jayway.jsonpath.JsonPath;
-import com.redhat.cajun.navy.process.message.model.DestinationLocations;
 import com.redhat.cajun.navy.process.message.model.IncidentReportedEvent;
 import com.redhat.cajun.navy.process.message.model.Message;
-import com.redhat.cajun.navy.rules.model.Destination;
-import com.redhat.cajun.navy.rules.model.Destinations;
-import com.redhat.cajun.navy.rules.model.Incident;
+import com.redhat.cajun.navy.process.rules.model.Incident;
 import org.jbpm.services.api.ProcessService;
 import org.kie.internal.KieInternalServices;
 import org.kie.internal.process.CorrelationKey;

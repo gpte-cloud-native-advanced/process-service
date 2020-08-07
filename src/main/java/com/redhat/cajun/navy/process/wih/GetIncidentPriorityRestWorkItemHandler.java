@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.redhat.cajun.navy.rules.model.Incident;
-import com.redhat.cajun.navy.rules.model.IncidentPriority;
+import com.redhat.cajun.navy.process.rules.model.Incident;
+import com.redhat.cajun.navy.process.rules.model.IncidentPriority;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItemManager;

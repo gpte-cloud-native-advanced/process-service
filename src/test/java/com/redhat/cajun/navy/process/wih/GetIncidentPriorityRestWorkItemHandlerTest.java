@@ -19,8 +19,8 @@ import java.math.BigDecimal;
 import java.util.Map;
 
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
-import com.redhat.cajun.navy.rules.model.Incident;
-import com.redhat.cajun.navy.rules.model.IncidentPriority;
+import com.redhat.cajun.navy.process.rules.model.Incident;
+import com.redhat.cajun.navy.process.rules.model.IncidentPriority;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

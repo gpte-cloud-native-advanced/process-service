@@ -4,7 +4,7 @@ import java.util.Map;
 
 import com.redhat.cajun.navy.process.message.model.IncidentAssignmentEvent;
 import com.redhat.cajun.navy.process.message.model.Message;
-import com.redhat.cajun.navy.rules.model.Mission;
+import com.redhat.cajun.navy.process.rules.model.Mission;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 

@@ -3,10 +3,9 @@ package com.redhat.cajun.navy.process.wih;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
-import com.redhat.cajun.navy.rules.model.Destination;
-import com.redhat.cajun.navy.rules.model.Destinations;
+import com.redhat.cajun.navy.process.rules.model.Destination;
+import com.redhat.cajun.navy.process.rules.model.Destinations;
 
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;

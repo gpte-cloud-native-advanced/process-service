@@ -13,10 +13,10 @@ public class UpdateIncidentCommandBuilder {
     public static Pair<String, Message<?>> builder(String messageType, Map<String, Object> parameters) {
 
         Object payload = parameters.get("Payload");
-        if (!(payload instanceof com.redhat.cajun.navy.rules.model.Incident)) {
+        if (!(payload instanceof com.redhat.cajun.navy.process.rules.model.Incident)) {
             throw new IllegalStateException("Parameter 'payload' cannot be null and must be of type com.redhat.cajun.navy.rules.model.Incident");
         }
-        com.redhat.cajun.navy.rules.model.Incident incident = (com.redhat.cajun.navy.rules.model.Incident) payload;
+        com.redhat.cajun.navy.process.rules.model.Incident incident = (com.redhat.cajun.navy.process.rules.model.Incident) payload;
         UpdateIncidentCommand command = new UpdateIncidentCommand.Builder(
                 new Incident.Builder(incident.getId(), status(incident.getStatus())).build())
                 .build();

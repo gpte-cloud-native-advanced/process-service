@@ -26,8 +26,8 @@ import java.util.List;
 import java.util.Map;
 
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
-import com.redhat.cajun.navy.rules.model.Responder;
-import com.redhat.cajun.navy.rules.model.Responders;
+import com.redhat.cajun.navy.process.rules.model.Responder;
+import com.redhat.cajun.navy.process.rules.model.Responders;
 import org.apache.commons.io.IOUtils;
 import org.junit.Before;
 import org.junit.Rule;

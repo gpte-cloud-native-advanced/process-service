@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.redhat.cajun.navy.rules.model.Responders;
+import com.redhat.cajun.navy.process.rules.model.Responders;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItemManager;
@@ -51,7 +51,7 @@ public class GetRespondersRestWorkItemHandler implements WorkItemHandler {
             ResponseEntity<List<Responder>> entity = restTemplate.exchange(uriComponents.toUriString(),
                     HttpMethod.GET, null, new ParameterizedTypeReference<List<Responder>>(){});
             responders = new Responders(entity.getBody().stream().map(r -> {
-                com.redhat.cajun.navy.rules.model.Responder responder = new com.redhat.cajun.navy.rules.model.Responder();
+                com.redhat.cajun.navy.process.rules.model.Responder responder = new com.redhat.cajun.navy.process.rules.model.Responder();
                 responder.setId(Long.toString(r.getId()));
                 responder.setFullname(r.getName());
                 responder.setPhoneNumber(r.getPhoneNumber());

@@ -25,9 +25,9 @@ import java.util.Map;
 
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.redhat.cajun.navy.process.wih.GetSheltersRestWorkItemHandler;
-import com.redhat.cajun.navy.rules.model.Destination;
-import com.redhat.cajun.navy.rules.model.Destinations;
-import com.redhat.cajun.navy.rules.model.Incident;
+import com.redhat.cajun.navy.process.rules.model.Destination;
+import com.redhat.cajun.navy.process.rules.model.Destinations;
+import com.redhat.cajun.navy.process.rules.model.Incident;
 
 import org.apache.commons.io.IOUtils;
 import org.hamcrest.CoreMatchers;

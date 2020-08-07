@@ -2,8 +2,8 @@ package com.redhat.cajun.navy.process.wih;
 
 import javax.annotation.PostConstruct;
 
-import com.redhat.cajun.navy.rules.model.Incident;
-import com.redhat.cajun.navy.rules.model.Mission;
+import com.redhat.cajun.navy.process.rules.model.Incident;
+import com.redhat.cajun.navy.process.rules.model.Mission;
 import org.jbpm.process.workitem.bpmn2.BusinessRuleTaskHandler;
 import org.jbpm.process.workitem.core.AbstractLogOrThrowWorkItemHandler;
 import org.kie.api.runtime.process.WorkItem;
